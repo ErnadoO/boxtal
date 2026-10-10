@@ -1,0 +1,1 @@
+{"timestamp":"2026-10-10T13:42:13.2228+02:00","status":422,"errors":[{"code":"RequestValidationException","parameters":[{"code":"RequestValidationException","field":"shipment.pickupPointCode","value":"'shipment.pickupPointCode' missing value"}]}]}

@@ -1,0 +1,68 @@
+{
+    "name": "ernadoo/boxtal",
+    "type": "library",
+    "description": "Boxtal API client: quotes (v1), shipping orders, labels, tracking, parcel points and webhooks (v3). Framework-agnostic.",
+    "keywords": [
+        "boxtal",
+        "shipping",
+        "carrier",
+        "label",
+        "tracking",
+        "parcel-point",
+        "colissimo",
+        "mondial-relay",
+        "chronopost"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Erwan Nader",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.1",
+        "psr/http-message": "^1.1 || ^2.0",
+        "psr/log": "^2.0 || ^3.0"
+    },
+    "require-dev": {
+        "nyholm/psr7": "^1.8.2",
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^11.0",
+        "symfony/http-client": "^7.4 || ^8.0"
+    },
+    "suggest": {
+        "symfony/http-client": "PSR-18 implementation — Psr18Client also implements PSR-17 factories",
+        "guzzlehttp/guzzle": "PSR-18 implementation with GuzzleHttp\\Psr7\\HttpFactory for PSR-17"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpstan": "phpstan analyse"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ernadoo\\Boxtal\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ernadoo\\Boxtal\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/ErnadoO/boxtal/issues",
+        "source": "https://github.com/ErnadoO/boxtal"
+    }
+}
